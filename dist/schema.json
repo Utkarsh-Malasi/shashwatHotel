@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Shashwat Hotels",
+  "description": "Experience the best hotel in Mussoorie with luxury accommodations, stunning mountain views, and exceptional service at Shashwat Hotels.",
+  "url": "https://shashwathotels.com",
+  "sameAs": [
+    "https://www.facebook.com/shashwathotels",
+    "https://www.instagram.com/shashwathotels",
+    "https://twitter.com/shashwathotels"
+  ],
+  "telephone": "+15551234567",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mall Road",
+    "addressLocality": "Mussoorie",
+    "addressRegion": "Uttarakhand",
+    "postalCode": "248179",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "30.4598",
+    "longitude": "78.0644"
+  },
+  "priceRange": "₹₹₹",
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "4.8",
+    "bestRating": "5"
+  },
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "24/7 Security",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Mountain View",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Free WiFi",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Restaurant",
+      "value": true
+    }
+  ],
+  "image": "https://shashwathotels.com/src/components/images/logoHd.png"
+}
