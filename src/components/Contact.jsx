@@ -1,5 +1,5 @@
 import React from 'react'
-import rest1Image from './images/rest1.avif'
+import rest1Image from './images/lobby.jpg'
 import CallButtons from './CallButtons';
 
 const Contact = () => {

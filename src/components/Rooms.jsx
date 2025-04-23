@@ -1,35 +1,35 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import room1Image from './images/superdeluxe.jpg'
-import room5Image from './images/deluxe.jpg'
-import premiumImage from './images/executive.jpg'
+import room1Image from './images/superdeluxeRoom4.jpg'
+import room5Image from './images/deluxeRoom3.jpg'
+import premiumImage from './images/executiveRoom.jpg'
 
 const Rooms = () => {
   const roomData = [
     {
       id: 1,
-      name: 'Executive Room',
+      name: 'Executive Suite - Forest View',
       image: premiumImage,
       price: '₹5500',
-      description: 'Our most luxurious accommodation with exclusive amenities and personalized service for an unforgettable stay.',
+      description: 'Our most luxurious accommodation at Forest View, the #1 best luxury hotel in Mussoorie, with exclusive amenities and personalized service for an unforgettable stay.',
       features: ['King-sized bed', 'Living area', 'Premium bar', 'Butler service', 'Panoramic view', 'Biometric room access', 'Private security service'],
       link: '/rooms/executive'
     },
     {
       id: 2,
-      name: 'Super Deluxe',
+      name: 'Super Deluxe - Forest View',
       image: room1Image,
       price: '₹4500',
-      description: 'Spacious suite with premium amenities, king-sized bed, and stunning views of the city skyline.',
+      description: 'Spacious suite at Shashwat Hotels Forest View with premium amenities, king-sized bed, and stunning mountain views in the heart of Mussoorie.',
       features: ['King-sized bed', 'Free Wi-Fi', 'Mini bar', 'Room service', 'Air conditioning', 'Electronic safe', 'Secure key card access'],
       link: '/rooms/superdeluxe'
     },
     {
       id: 3,
-      name: 'Deluxe Room',
+      name: 'Deluxe Room - Forest View',
       image: room5Image,
-      price: '₹4000',
-      description: 'Comfortable and elegant room with all essential amenities for a pleasant and relaxing stay.',
+      price: '₹3500',
+      description: 'Comfortable and elegant room at the best luxury hotel in Mussoorie with all essential amenities for a pleasant and relaxing mountain getaway.',
       features: ['Queen-sized bed', 'Free Wi-Fi', 'Work desk', 'Coffee maker', 'Air conditioning', 'In-room safe', 'Security alarm'],
       link: '/rooms/deluxe'
     }
@@ -40,10 +40,10 @@ const Rooms = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16 fade-in">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 sm:mb-6 relative inline-block">
-            <span className="relative z-10">Our Rooms</span>
+            <span className="relative z-10">Forest View Luxury Rooms</span>
             <span className="absolute -bottom-2 left-1/4 w-1/2 h-1 bg-gradient-to-r from-amber-600 to-amber-400"></span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed mt-4 text-sm sm:text-base">Choose from our selection of luxurious rooms and suites designed for your comfort, relaxation, and complete security during your stay.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed mt-4 text-sm sm:text-base">Experience the #1 best luxury hotel in Mussoorie with our selection of premium rooms and suites at Shashwat Hotels Forest View, designed for your comfort, relaxation, and complete security during your stay.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 fade-in-delay-1">

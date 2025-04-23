@@ -2,14 +2,19 @@ import React from 'react'
 
 
 // Import images for amenity categories
-import parkingImage from './images/photo_2025-04-06_14-49-33.jpg'
-import spaImage from './images/area5.avif'
-import restaurantImage from './images/rest1.avif'
-import roomServiceImage from './images/photo_2025-04-06_14-49-15.jpg'
+import parkingImage from './images/parking.jpg'
+import spaImage from './images/restaurant.jpg'
+import restaurantImage from './images/restaurant2.jpg'
+import roomServiceImage from './images/reception.jpg'
 import securityImage from './images/Shlogo2.jpg'
-import wellnessImage from './images/mission.avif'
-import businessImage from './images/photo_2025-04-06_14-49-21.jpg'
-import commonAreaImage from './images/reception.avif'
+import wellnessImage from './images/lobby.jpg'
+import businessImage from './images/lobby2.jpg'
+import commonAreaImage from './images/reception.jpg'
+import hallImage from './images/hall.jpg'
+import hall0Image from './images/hall0.jpg'
+import hall2Image from './images/hall2.jpg'
+import hall3Image from './images/hall3.jpg'
+
 
 // Import SVG icons as React components
 import { ParkingIcon, SpaIcon, RestaurantIcon, SmokingIcon, PowerIcon, NewspaperIcon, 
@@ -23,7 +28,13 @@ const Amenities = () => {
       id: 1,
       category: 'Highlighted Amenities',
       image: parkingImage,
-      items: ['Free Parking', 'Spa', 'Restaurant with Open Terrace (48+ items)']
+      items: ['Free Parking', 'Spa', 'Restaurant with Open Terrace (48+ items)', 'Banquet Hall']
+    },
+    {
+      id: 22,
+      category: 'Banquet Hall',
+      images: [hallImage, hall0Image, hall2Image, hall3Image],
+      items: ['Spacious Event Space', 'Modern Audio-Visual Equipment', 'Customizable Seating Arrangements', 'Perfect for Conferences and Celebrations']
     },
     {
       id: 2,
@@ -91,11 +102,24 @@ const Amenities = () => {
           {amenitiesCategories.map((category) => (
             <div key={category.id} className="bg-gradient-to-br from-white to-primary-50 rounded-lg overflow-hidden shadow-lg flex flex-col card-hover border border-primary-200 h-full">
               <div className="h-48 overflow-hidden relative">
-                <img 
-                  src={category.image} 
-                  alt={category.category} 
-                  className="w-full h-full object-cover brightness-[0.95] transition-transform duration-700 hover:scale-110"
-                />
+                {category.images ? (
+                  <div className="relative w-full h-full">
+                    {category.images.map((image, idx) => (
+                      <img 
+                        key={idx}
+                        src={image} 
+                        alt={`${category.category} ${idx + 1}`} 
+                        className={`absolute inset-0 w-full h-full object-cover brightness-[0.95] transition-all duration-700 hover:scale-110 ${idx === 0 ? 'opacity-100' : 'opacity-0'} hover:opacity-100`}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <img 
+                    src={category.image} 
+                    alt={category.category} 
+                    className="w-full h-full object-cover brightness-[0.95] transition-transform duration-700 hover:scale-110"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-600/70 to-transparent flex items-end">
                   <h3 className="text-xl font-bold text-white p-4 w-full">
                     {category.category}

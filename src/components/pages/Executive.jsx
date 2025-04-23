@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import room1Image from '../images/room1.avif'
-import bathroom3Image from '../images/bathroom3.jpg'
-import bathroom4Image from '../images/bathroom4.jpg'
+import room1Image from '../images/executiveRoom.jpg'
+import roomImage from '../images/executiveRoom3.jpg'
+import bathroom3Image from '../images/executiveBathroom.jpg'
+import bathroom4Image from '../images/executiveRoom2.jpg'
+import balconyImage from '../images/executiveRoomBalcony.jpg'
 
 const Executive = () => {
   // Function to handle phone call booking
   const handleCallBooking = () => {
-    window.location.href = 'tel:+15551234567';
+    window.location.href = 'tel:+15551234567'; // Direct call booking for Forest View luxury hotel in Mussoorie
   };
+
+  // Set page title and meta description for SEO
+  useEffect(() => {
+    document.title = 'Executive Suite | Forest View | Best Luxury Hotel in Mussoorie';
+    
+    // Create or update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Indulge in premium luxury at Shashwat Hotels Forest View Mussoorie. Our Executive Suites offer spacious accommodation, stunning mountain views and world-class amenities at the #1 best luxury hotel in Mussoorie.';
+  }, []);
 
   return (
     <div className="pt-20 bg-white min-h-screen">
@@ -19,7 +35,7 @@ const Executive = () => {
           <span className="mx-2">/</span>
           <Link to="/#rooms" className="hover:text-amber-600 transition-colors">Rooms</Link>
           <span className="mx-2">/</span>
-          <span className="text-amber-600">Executive Room</span>
+          <span className="text-amber-600">Executive Suite</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -29,7 +45,19 @@ const Executive = () => {
               <div className="relative h-96 overflow-hidden">
                 <img 
                   src={room1Image} 
-                  alt="Executive Room" 
+                  alt="Executive Suite at Forest View - #1 Best Luxury Hotel in Mussoorie" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+                <div className="absolute  bottom-0 right-0 bg-amber-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+                  ₹5500 / night
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg mb-6 border border-amber-100">
+              <div className="relative h-96 overflow-hidden">
+                <img 
+                  src={roomImage} 
+                  alt="Executive Suite at Forest View - #1 Best Luxury Hotel in Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
                 <div className="absolute  bottom-0 right-0 bg-amber-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
@@ -42,16 +70,26 @@ const Executive = () => {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg h-48 border border-amber-100">
                 <img 
                   src={bathroom3Image} 
-                  alt="Executive Room Bathroom" 
+                  alt="Luxury Bathroom in Executive Suite - Forest View Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg h-48 border border-amber-100">
                 <img 
                   src={bathroom4Image} 
-                  alt="Executive Room Bathroom 2" 
+                  alt="Premium Amenities in Executive Suite - Best Hotel in Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
+              </div>
+            </div>
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg h-auto border border-amber-100 mb-6">
+              <img 
+                src={balconyImage} 
+                alt="Private Balcony with Mountain Views - Executive Suite at Forest View Mussoorie" 
+                className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+              />
+              <div className="absolute bottom-0 left-0 bg-amber-600/80 text-white px-3 py-1 text-sm font-semibold">
+                Private Balcony
               </div>
             </div>
           </div>
@@ -59,7 +97,7 @@ const Executive = () => {
           {/* Right Column - Room Details */}
           <div className="fade-in-delay-1">
             <div className="bg-white rounded-lg shadow-lg p-6 mb-6 card-hover border border-amber-100">
-              <h1 className="text-2xl font-bold text-gray-800 mb-4">Executive Room</h1>
+              <h1 className="text-2xl font-bold text-gray-800 mb-4">Executive Suite - Forest View</h1>
               <div className="flex items-center mb-4">
                 <div className="flex text-amber-500">
                   {[...Array(5)].map((_, i) => (
@@ -73,10 +111,13 @@ const Executive = () => {
               
               <div className="border-t border-gray-200 pt-4 mb-4">
                 <p className="text-gray-600 mb-4">
-                  Indulge in the ultimate luxury experience in our Premium Suite. This expansive accommodation offers unparalleled comfort, breathtaking views, and exclusive amenities for the most discerning guests.
+                  Indulge in the ultimate luxury experience in our Executive Suite at Forest View, the best luxury hotel in Mussoorie. This expansive accommodation offers unparalleled comfort, breathtaking mountain views, and exclusive amenities for the most discerning guests.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Featuring a separate living area, premium furnishings, and personalized service, our Executive Suite at Forest View Mussoorie represents the pinnacle of luxury hospitality in Uttarakhand.
                 </p>
                 <p className="text-gray-600">
-                  Featuring a separate living area, premium furnishings, and personalized service, our Premium Suite represents the pinnacle of hospitality.
+                  Step out onto your private balcony and immerse yourself in panoramic mountain views that showcase the majestic beauty of Mussoorie. The perfect spot to enjoy your morning coffee or evening relaxation.
                 </p>
               </div>
 

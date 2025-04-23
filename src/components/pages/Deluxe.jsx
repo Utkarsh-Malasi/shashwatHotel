@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import room5Image from '../images/deluxe.jpg'
-
+import room5Image from '../images/deluxeRoom.jpg'
+import roomImage from '../images/deluxeRoom2.jpg'
+import rImage from '../images/deluxeRoom3.jpg'
+import BathImage1 from '../images/bathroom.jpg'
+import BathImage from '../images/bathroom2.jpg'
 const Deluxe = () => {
   // Function to handle phone call booking
   const handleCallBooking = () => {
-    window.location.href = 'tel:+15551234567';
+    window.location.href = 'tel:+15551234567'; // Direct call booking for Forest View luxury hotel in Mussoorie
   };
+
+  // Set page title and meta description for SEO
+  useEffect(() => {
+    document.title = 'Deluxe Room | Forest View | Best Luxury Hotel in Mussoorie';
+    
+    // Create or update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Book our affordable Deluxe Room at Shashwat Hotels Forest View Mussoorie. Enjoy comfortable accommodations with mountain views and excellent service at the #1 best luxury hotel in Mussoorie.';
+  }, []);
 
   return (
     <div className="pt-20 bg-white min-h-screen">
@@ -17,7 +34,7 @@ const Deluxe = () => {
           <span className="mx-2">/</span>
           <Link to="/#rooms" className="hover:text-amber-500 transition-colors">Rooms</Link>
           <span className="mx-2">/</span>
-          <span className="text-amber-500">Budget Room</span>
+          <span className="text-amber-500">Deluxe Room</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -27,27 +44,50 @@ const Deluxe = () => {
               <div className="relative h-96 overflow-hidden">
                 <img 
                   src={room5Image} 
-                  alt="Budget Room" 
+                  alt="Deluxe Room at Forest View - #1 Best Luxury Hotel in Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
                 <div className="absolute bottom-0 right-0  bg-amber-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
-                  $99 / night
+                  ₹3500 / night
                 </div>
               </div>
             </div>
-
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mb-6">
+              <div className="relative h-96 overflow-hidden">
+                <img 
+                  src={roomImage} 
+                  alt="Deluxe Room at Forest View - #1 Best Luxury Hotel in Mussoorie" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+                <div className="absolute bottom-0 right-0  bg-amber-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+                  ₹3500 / night
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mb-6">
+              <div className="relative h-96 overflow-hidden">
+                <img 
+                  src={rImage} 
+                  alt="Deluxe Room at Forest View - #1 Best Luxury Hotel in Mussoorie" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+                <div className="absolute bottom-0 right-0  bg-amber-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+                  ₹3500 / night
+                </div>
+              </div>
+            </div>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md h-48">
                 <img 
-                  src={room5Image} 
-                  alt="Budget Room Bathroom" 
+                  src={BathImage} 
+                  alt="Comfortable Bathroom in Deluxe Room - Forest View Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md h-48">
                 <img 
-                  src={room5Image} 
-                  alt="Budget Room View" 
+                  src={BathImage1} 
+                  alt="Mountain View from Deluxe Room - Best Hotel in Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
@@ -57,7 +97,7 @@ const Deluxe = () => {
           {/* Right Column - Room Details */}
           <div className="fade-in-delay-1">
             <div className="bg-gray-100 rounded-lg shadow-md p-6 mb-6 card-hover">
-              <h1 className="text-2xl font-bold text-gray-800 mb-4">Budget Room</h1>
+              <h1 className="text-2xl font-bold text-gray-800 mb-4">Deluxe Room - Forest View</h1>
               <div className="flex items-center mb-4">
                 <div className="flex text-amber-500">
                   {[...Array(4)].map((_, i) => (
@@ -74,10 +114,10 @@ const Deluxe = () => {
               
               <div className="border-t border-gray-300 pt-4 mb-4">
                 <p className="text-gray-700 mb-4">
-                  Our budget-friendly room offers comfort without compromise. Perfect for travelers who want quality accommodations at an affordable price.
+                  Our comfortable Deluxe Room at Forest View offers quality accommodations at an affordable price in the best location in Mussoorie. Perfect for travelers who want to experience luxury without the premium price tag.
                 </p>
                 <p className="text-gray-700">
-                  Enjoy a cozy space with all essential amenities to make your stay comfortable and convenient.
+                  Enjoy a cozy space with mountain views and all essential amenities to make your stay at our luxury hotel in Mussoorie comfortable and memorable.
                 </p>
               </div>
 

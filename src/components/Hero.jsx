@@ -1,5 +1,5 @@
 import React from 'react'
-import roomImage from './images/photo_2025-04-06_14-49-10.jpg'
+import roomImage from './images/executiveRoom.jpg'
 
 const Hero = () => {
 
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img 
           src={roomImage} 
-          alt="Luxury Hotel Room in Mussoorie with Mountain View" 
+          alt="#1 Best Luxury Hotel in Mussoorie - Forest View by Shashwat Hotels" 
           className="w-full h-full object-cover brightness-[0.85] transition-all duration-700 transform scale-105 hover:scale-100"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/20"></div>
@@ -23,7 +23,7 @@ const Hero = () => {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-yellow-500 to-amber-400 font-bold ml-2">Mussoorie</span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-4 sm:mb-6 md:mb-8 max-w-3xl  leading-relaxed font-light drop-shadow-md px-2 sm:px-4 md:px-6">
-          Discover the perfect blend of elegance, comfort, and breathtaking mountain views at Shashwat Hotels - where every stay becomes an unforgettable experience.
+          Discover the perfect blend of elegance, comfort, and breathtaking mountain views at Shashwat Hotels Forest View - the #1 best luxury hotel in Mussoorie where every stay becomes an unforgettable experience.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5  w-full max-w-2xl mx-auto px-2 sm:px-4 md:px-6">
           <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 mb-4 sm:mb-0 p-2 sm:p-3 md:p-4 rounded-xl border border-amber-300/50 bg-black/30 backdrop-blur-sm shadow-elegant gold-shimmer">
@@ -48,31 +48,20 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full mb-4 sm:mb-0">
             <a 
-              href="tel:+919910597907"
-              className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-medium py-2 sm:py-2.5 px-4 sm:px-5 text-center rounded-md transition-all duration-300 text-sm sm:text-base shadow-lg shadow-amber-600/20 transform hover:-translate-y-1 flex-1 flex items-center justify-center border border-amber-400/30"
+              href="#rooms" 
+              className="w-full bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-lg shadow-amber-600/20 btn-hover-effect flex items-center justify-center"
             >
-              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-              </svg>
-              Book Now
+              Explore Rooms
             </a>
             <a 
-              href="#rooms" 
-              className=" border border-amber-400/50  text-black bg-amber-200 hover:bg-amber-950 hover:text-white font-medium py-2.5 px-5 rounded-md transition-all duration-300 text-base shadow-md transform hover:-translate-y-1 flex-1 flex items-center justify-center"
+              href="#contact" 
+              className="w-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-bold py-3 px-4 rounded-lg transition-colors border border-white/30 shadow-lg shadow-black/5 btn-hover-effect flex items-center justify-center "
             >
-              <svg className="w-5 h-5 mr-2 text-amber-300 " fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-              View Rooms
+              Contact Us
             </a>
           </div>
         </div>
       </div>
-      
-      {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
-      <div className="absolute top-1/4 left-0 w-32 h-32 bg-amber-500/10 rounded-full filter blur-3xl "></div>
-      <div className="absolute bottom-1/3 right-0 w-40 h-40 bg-amber-600/10 rounded-full filter blur-3xl " ></div>
     </div>
   )
 }

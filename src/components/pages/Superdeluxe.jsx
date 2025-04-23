@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import room1Image from '../images/room1.avif'
+import room1Image from '../images/superdeluxeRoom4.jpg'
 
 const Superdeluxe = () => {
   // Function to handle phone call booking
   const handleCallBooking = () => {
-    window.location.href = 'tel:+15551234567';
+    window.location.href = 'tel:+919910597907'; // Direct call booking for Forest View luxury hotel
   };
+
+  // Set page title and meta description for SEO
+  useEffect(() => {
+    document.title = 'Super Deluxe Room | Forest View | Best Luxury Hotel in Mussoorie';
+    
+    // Create or update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = 'Experience the best luxury accommodation in Mussoorie at Shashwat Hotels Forest View. Our Super Deluxe rooms offer premium mountain views, elegant furnishings and exceptional service.';
+  }, []);
 
   return (
     <div className="pt-20 bg-white min-h-screen">
@@ -27,7 +41,7 @@ const Superdeluxe = () => {
               <div className="relative h-96 overflow-hidden">
                 <img 
                   src={room1Image} 
-                  alt="Super Deluxe" 
+                  alt="Super Deluxe Room at Forest View - Best Luxury Hotel in Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
                 <div className="absolute  bottom-0 right-0 bg-amber-600 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
@@ -40,14 +54,14 @@ const Superdeluxe = () => {
               <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md h-48">
                 <img 
                   src={room1Image} 
-                  alt="Super Deluxe Bathroom" 
+                  alt="Luxury Bathroom in Super Deluxe Room - Forest View Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
               <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md h-48">
                 <img 
                   src={room1Image} 
-                  alt="Super Deluxe View" 
+                  alt="Mountain View from Super Deluxe Room - Luxury Hotel in Mussoorie" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </div>
@@ -57,7 +71,7 @@ const Superdeluxe = () => {
           {/* Right Column - Room Details */}
           <div className="fade-in-delay-1">
             <div className="bg-gray-100 rounded-lg shadow-md p-6 mb-6 card-hover">
-              <h1 className="text-2xl font-bold text-gray-800 mb-4">Super Deluxe</h1>
+              <h1 className="text-2xl font-bold text-gray-800 mb-4">Super Deluxe - Forest View</h1>
               <div className="flex items-center mb-4">
                 <div className="flex text-amber-500">
                   {[...Array(5)].map((_, i) => (
@@ -71,10 +85,10 @@ const Superdeluxe = () => {
               
               <div className="border-t border-gray-300 pt-4 mb-4">
                 <p className="text-gray-700 mb-4">
-                  Experience luxury and comfort in our spacious Deluxe Suite. Featuring premium amenities and elegant furnishings, this suite offers the perfect retreat after a day of exploration.
+                  Experience luxury and comfort in our spacious Super Deluxe Suite at Forest View, the best hotel in Mussoorie. Featuring premium amenities and elegant furnishings, this suite offers the perfect retreat after a day of exploration.
                 </p>
                 <p className="text-gray-700">
-                  Enjoy stunning views and a sophisticated atmosphere designed for discerning travelers who appreciate the finer details.
+                  Enjoy stunning mountain views and a sophisticated atmosphere designed for discerning travelers who appreciate the finer details of luxury accommodation in Mussoorie.
                 </p>
               </div>
 
@@ -97,7 +111,7 @@ const Superdeluxe = () => {
             </div>
 
             <div className="bg-gray-100 rounded-lg shadow-md p-6 card-hover">
-              <h2 className="text-xl font-bold text-gray-800 mb-4">Room Details</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Room Details - Forest View Luxury</h2>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-amber-500 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

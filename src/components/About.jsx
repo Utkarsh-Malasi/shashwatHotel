@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from './images/area5.avif'
-import securityImage from './images/reception.avif'
-import visionImage from './images/photo_2025-04-06_14-49-33.jpg'
+import Image from './images/reception.jpg'
+import securityImage from './images/reception.jpg'
+import visionImage from './images/lobby.jpg'
 
 const About = () => {
 
