@@ -20,10 +20,11 @@ export default defineConfig({
     // Split chunks for better caching
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          // Split UI components into a separate chunk
-          components: ['./src/components/Header.jsx', './src/components/Footer.jsx']
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+          // Don't manually split components to avoid export issues
         }
       }
     }
