@@ -28,7 +28,7 @@ const Amenities = () => {
       id: 1,
       category: 'Highlighted Amenities',
       image: parkingImage,
-      items: ['Free Parking', 'Spa', 'Restaurant with Open Terrace (48+ items)', 'Banquet Hall']
+      items: ['Free Parking', 'Restaurant with Open Terrace (48+ items)', 'Banquet Hall']
     },
     {
       id: 22,
@@ -40,7 +40,7 @@ const Amenities = () => {
       id: 2,
       category: 'Basic Facilities',
       image: roomServiceImage,
-      items: ['Smoking Rooms', 'Free Parking', 'Power Backup', 'Newspaper', 'Room Service', '4 More']
+      items: ['Smoking Rooms', 'Free Parking', 'Power Backup', 'Newspaper', 'Room Service']
     },
     {
       id: 3,
@@ -70,7 +70,7 @@ const Amenities = () => {
       id: 7,
       category: 'Beauty and Spa',
       image: spaImage,
-      items: ['Spa']
+      items: ['Wellness']
     },
     {
       id: 8,
@@ -135,9 +135,6 @@ const Amenities = () => {
                       case 'free parking':
                       case 'parking':
                         AmenityIcon = ParkingIcon;
-                        break;
-                      case 'spa':
-                        AmenityIcon = SpaIcon;
                         break;
                       case 'restaurant':
                         AmenityIcon = RestaurantIcon;

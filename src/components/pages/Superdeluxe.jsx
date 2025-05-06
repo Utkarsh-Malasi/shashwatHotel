@@ -146,7 +146,7 @@ const Superdeluxe = () => {
                   </svg>
                   <div>
                     <p className="text-gray-800">View</p>
-                    <p className="text-gray-600">Ocean View</p>
+                    <p className="text-gray-600">Mountain View</p>
                   </div>
                 </li>
               </ul>
@@ -185,7 +185,7 @@ const Superdeluxe = () => {
               </div>
               <p className="text-gray-600">Individual climate control system for personalized comfort.</p>
             </div>
-            <div className="bg-gray-800 p-5 rounded-lg shadow-lg card-hover">
+            <div className="bg-gray-100 p-5 rounded-lg shadow-lg card-hover">
               <div className="flex items-center mb-3">
                 <svg className="w-6 h-6 text-amber-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />

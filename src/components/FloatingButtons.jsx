@@ -7,7 +7,7 @@ const FloatingButtons = () => {
   
   // Function to handle location
   const handleLocation = () => {
-    window.open('https://maps.app.goo.gl/QHcC7W4MuBny9ueV8', '_blank');
+    window.open('https://www.google.com/maps/place/The+Forest+View+by+DL+Hotels+%26+Resorts/@30.4582371,78.0680255,17z/data=!3m1!4b1!4m9!3m8!1s0x3908d163c522d137:0xd8139ed0712a8c4!5m2!4m1!1i2!8m2!3d30.4582325!4d78.0706004!16s%2Fg%2F11q30y3tjr?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D', '_blank');
   };
 
   return (

@@ -10,7 +10,7 @@ const Contact = () => {
   
   // Function to handle email
   const handleEmail = () => {
-    window.location.href = 'mailto:info@luxuryhotel.com';
+    window.location.href = 'mailto:shashwathotel@gmail.com';
   };
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-blue-50 to-white">
@@ -45,8 +45,12 @@ const Contact = () => {
                   </svg>
                   <div>
                     <p className="text-gray-800 font-medium">Address</p>
-                    <p className="text-gray-600">1st Floor,Prakash Complex, Opp. Radha Krishna Mandir Veraval 363365</p>
+                    <p className="text-gray-600 font-bold">SHASHWAT GROUP OF HOTELS</p>
+                    <p className="text-gray-600">Shop no.22 , Casa The Status , Near Ananya Vidhayala ,Chandkela - 382424</p>
+
                   </div>
+
+
                 </div>
                 <div className="flex items-start">
                   <svg className="w-5 h-5 text-amber-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -123,9 +127,9 @@ const Contact = () => {
                 </a>
                 
                 {/* Twitter/X */}
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-gray-100 hover:bg-gray-600 hover:text-white text-gray-600 p-3 rounded-full transition-colors">
+                <a href="https://wa.me/919910597907" target="_blank" rel="noopener noreferrer" className="bg-gray-100 hover:bg-gray-600 hover:text-white text-gray-600 p-3 rounded-full transition-colors">
                   <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                   </svg>
                 </a>
                 
@@ -160,7 +164,7 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Book on Make my trip </h3>
                 <p className="text-gray-600 mb-5">Access exclusive deals and earn rewards with Booking.com's loyalty program.</p>
                 <a 
-                  href="https://www.makemytrip.com/hotels/shashwat_grand_valley-details-mussoorie.html" 
+                  href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201812021345122257&_uCurrency=INR&checkin=05232025&checkout=05242025&city=CTXMS&country=IN&lat=30.45826&lng=78.07053&locusId=CTXMS&locusType=city&rank=1&reference=hotel&rf=directSearch&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=The+Forest+View+by+DL+Hotels+%26+Resorts&topHtlId=201812021345122257&type=hotel&mtkeys=undefined&isPropSearch=T" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-md transition-all duration-300 text-center"
@@ -178,7 +182,7 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Book on TripAdvisor</h3>
                 <p className="text-gray-600 mb-5">Read reviews, compare prices, and find the best deals from multiple booking sites.</p>
                 <a 
-                  href="https://www.tripadvisor.in/Hotel_Review-g297689-d28105936-Reviews-Shashwat_Grand_Valley-Mussoorie_Dehradun_District_Uttarakhand.html" 
+                  href="https://www.tripadvisor.in/Hotel_Review-g297689-d23268404-Reviews-The_Forest_View_By_Shashwat_Hotels-Mussoorie_Dehradun_District_Uttarakhand.html" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-md transition-all duration-300 text-center"
@@ -196,7 +200,7 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Book on Agoda</h3>
                 <p className="text-gray-600 mb-5">Find great deals and instant confirmation on Agoda for your stay.</p>
                 <a 
-                  href="https://www.agoda.com/en-in/search?city=17094&hotel=grand-valley-mussoorie" 
+                  href="https://www.agoda.com/hotel-forest-view-by-dl-hotels/hotel/mussoorie-in.html?countryId=35&finalPriceView=1&isShowMobileAppPrice=false&cid=1918349&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2025-08-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&los=1&searchrequestid=c692e0d4-decd-4d47-8f5e-fcc783b676e1&ds=QdgeQYvMndmVrrC1" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-4 rounded-md transition-all duration-300 text-center"
@@ -208,13 +212,13 @@ const Contact = () => {
             {/* Airbnb */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-pink-100">
               <div className="h-20 bg-gradient-to-r from-pink-500 to-pink-400 flex items-center justify-center">
-                <img src="https://seeklogo.com/images/A/airbnb-logo-1D03C48906-seeklogo.com.png" alt="Airbnb" className="h-12" />
+                <img src="https://images.seeklogo.com/logo-png/28/2/booking-logo-png_seeklogo-286041.png?v=1962823536342987408" alt="Airbnb" className="h-12" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3">Book on Airbnb</h3>
-                <p className="text-gray-600 mb-5">Book unique stays and experiences on Airbnb for your next trip.</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">Book on Booking.com</h3>
+                <p className="text-gray-600 mb-5">Book unique stays and experiences on Booking.com for your next trip.</p>
                 <a 
-                  href="https://www.airbnb.co.in/rooms/1094797289460010397?source_impression_id=p3_1744797732_P3ZZ6U_-nXqaYI8G" 
+                  href="https://www.booking.com/searchresults.en-gb.html?aid=356980&label=gog235jc-1BCAsobEIodGhlLWZvcmVzdC12aWV3LWJ5LWRsLWhvdGVscy1hbmQtcmVzb3J0c0gzWANobIgBAZgBCbgBF8gBDNgBAegBAYgCAagCA7gC95fpwAbAAgHSAiQyOWQ0N2FmZC04OWI5LTRkYjgtYjQ2My0yZTlmNTE4ZGRiNjLYAgXgAgE&highlighted_hotels=10992507&redirected=1&city=-2105202&hlrd=user_sh&source=hotel&expand_sb=1&keep_landing=1&sid=198057fd836a02f3409e709401ec503b" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-4 rounded-md transition-all duration-300 text-center"
@@ -223,24 +227,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            {/* goibibo */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-orange-100">
-              <div className="h-20  bg-gradient-to-r from-orange-500 to-orange-400 flex items-center justify-center">
-                <img  src="data:image/jpeg;base64,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" alt="Goibibo" className="h-12" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3">Book on Justdial</h3>
-                <p className="text-gray-600 mb-5">Contact and book directly via Goibibo for instant assistance.</p>
-                <a 
-                  href="https://www.goibibo.com/hotels/shashwat-grand-valley-hotel-in-mussoorie-7073631944539546424/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-md transition-all duration-300 text-center"
-                >
-                  Book Now
-                </a>
-              </div>
-            </div>
+            
           </div>
         </div>
         </div>
