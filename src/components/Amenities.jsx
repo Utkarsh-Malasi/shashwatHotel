@@ -68,7 +68,7 @@ const Amenities = () => {
     },
     {
       id: 7,
-      category: 'Beauty and Spa',
+      category: 'Relax and Chill',
       image: spaImage,
       items: ['Wellness']
     },
