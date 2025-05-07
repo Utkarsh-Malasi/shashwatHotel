@@ -46,7 +46,7 @@ const Contact = () => {
                   <div>
                     <p className="text-gray-800 font-medium">Address</p>
                     <p className="text-gray-600 font-bold">SHASHWAT GROUP OF HOTELS</p>
-                    <p className="text-gray-600">Shop no.22 , Casa The Status , Near Ananya Vidhayala ,Chandkela - 382424</p>
+                    <p className="text-gray-600">Shop no.22 , Casa The Status , Near Ananya Vidhayala ,Chandkela - 382424, Ahmedabad</p>
 
                   </div>
 

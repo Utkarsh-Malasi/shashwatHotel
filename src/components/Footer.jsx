@@ -4,12 +4,12 @@ import logoImage from './images/Shlogo2.jpg';
 const Footer = () => {
   // Function to handle phone call
   const handleCall = () => {
-    window.location.href = 'tel:+15551234567';
+    window.location.href = 'tel:+917455957711';
   };
   
   // Function to handle email
   const handleEmail = () => {
-    window.location.href = 'mailto:info@luxuryhotel.com';
+    window.location.href = 'mailto:shashwathotel@gmail.com';
   };
 
   return (
